@@ -10,3 +10,5 @@ class Moto:
     
  # 6. Implemente o Método Especial str na Classe Filha (Moto): Adicione um método especial str à 
 # classe Moto que estenda o método da classe pai (Veiculo) e inclua a informação sobre o tipo da moto.
+    def __str__(self):
+        return f'O modelo da moto é {self.tipo}'
