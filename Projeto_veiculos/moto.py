@@ -3,12 +3,12 @@
 # Adicione um novo atributo chamado tipo ao construtor, indicando se a moto é esportiva ou casual.
 from Projeto_veiculos.veiculo import Veiculo
 
-class Moto:
+class Moto(Veiculo):
     def __init__(self, marca, modelo, tipo):
-        super().__str__(marca, modelo)
+        super().__init__(marca, modelo)
         self.tipo = tipo
     
  # 6. Implemente o Método Especial str na Classe Filha (Moto): Adicione um método especial str à 
 # classe Moto que estenda o método da classe pai (Veiculo) e inclua a informação sobre o tipo da moto.
     def __str__(self):
-        return f'O modelo da moto é {self.tipo}'
+        return f'{super().__str__()} | Tipo: {self.tipo}'

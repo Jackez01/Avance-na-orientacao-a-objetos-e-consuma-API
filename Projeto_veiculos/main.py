@@ -11,6 +11,14 @@ carro2 = Carro('Sentra', 'esportivo', 4)
 carro3 = Carro('Corsa', 'esportivo', 2)
 
 moto1 = Moto('Kawasaki', 'Ninja', 'Esportiva')
-moto2 = Moto()
-moto3 = Moto()
+moto2 = Moto('Yamaha', 'Scooter', 'casual')
+moto3 = Moto('Honda', 'CG150', 'casual')
 # 9. Exiba as Informações: Para cada instância, imprima no console as informações utilizando o método str.
+
+print(carro1)
+print(carro2)
+print(carro3)
+
+print(moto1)
+print(moto2)
+print(moto3)

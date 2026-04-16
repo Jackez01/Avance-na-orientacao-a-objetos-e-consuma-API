@@ -1,7 +1,7 @@
 # 3. Crie uma Classe Filha (Carro): Agora, crie uma classe chamada Carro que herda da classe Veiculo. 
 # No construtor da classe Carro, inclua um novo atributo chamado portas que indica a quantidade de
 # portas do carro.
-from Projeto_veiculos.veiculo import Veiculo
+from  Projeto_veiculos.veiculo import Veiculo
 
 class Carro(Veiculo): 
     def __init__(self, marca, modelo, portas):

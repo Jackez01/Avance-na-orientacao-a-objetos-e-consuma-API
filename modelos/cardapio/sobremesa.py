@@ -1,0 +1,19 @@
+# Crie uma classe chamada Sobremesa que herda de ItemCardapio, adicione atributos específicos
+# como tipo, tamanho e descricao à classe Sobremesa. Ajuste a inicialização da classe para
+# incluir esses novos atributos, possibilitando a criação de um novo item ao cardápio do restaurante.
+
+# Atualize o método __str__ conforme necessário para refletir essas mudanças.
+
+# Certifique-se de que a classe Sobremesa mantenha a herança do método aplicar_desconto de ItemCardapio.
+
+
+
+from modelos.cardapio.item_cardapio import itemCardapio
+
+class Sobremesa(itemCardapio):
+    def __init__(self, nome, preco, acucar):
+        super().__init__(nome, preco)
+        self.acucar = acucar
+    
+    def __str__(self):
+        return f'{super().__str__()} | Nível de açucar: {self.acucar}'
