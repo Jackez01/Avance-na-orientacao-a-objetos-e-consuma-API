@@ -16,4 +16,7 @@ class Sobremesa(itemCardapio):
         self.acucar = acucar
     
     def __str__(self):
-        return f'{super().__str__()} | Nível de açucar: {self.acucar}'
+        return self._nome
+    
+    def aplicar_desconto(self):
+        self._preco -= (self._preco*0.07)
